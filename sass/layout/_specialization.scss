@@ -1,0 +1,35 @@
+.specialization {
+  &__list {
+    display: flex;
+  }
+
+  &__list &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__thumb {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__text {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    @include font($fw: 700, $lh: 1.14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__sub {
+    padding-top: 27px;
+  }
+}

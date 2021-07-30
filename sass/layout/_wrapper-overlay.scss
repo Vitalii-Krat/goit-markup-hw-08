@@ -1,0 +1,27 @@
+.wrapper-overlay {
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(100%);
+    transition: transform var(--duration-effect) var(--timing-function);
+
+    @include font($fs: 18px, $fw: 400, $lh: 1.56);
+
+    color: var(--white-text-color);
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+
+  &:hover &__text,
+  &:focus &__text {
+    transform: translateY(-100%);
+    overflow: auto;
+  }
+}

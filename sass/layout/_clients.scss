@@ -1,0 +1,38 @@
+.clients {
+  &__list {
+    display: flex;
+  }
+  &__list > &__company {
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list > &__company:last-child {
+    margin-right: 0px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: background-color var(--duration-effect) var(--timing-function);
+  }
+  &__link:hover,
+  &__link:focus {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+  }
+
+  &__icon {
+    transition: fill var(--duration-effect) var(--timing-function);
+  }
+}

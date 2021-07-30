@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--duration-effect) var(--timing-function);
+  }
+
+  &__link:focus,
+  &__link:hover {
+    background-color: var(--accent-text-color);
+  }
+
+  &__link:focus &__icon,
+  &__link:hover &__icon {
+    fill: white;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    transition: fill var(--duration-effect) var(--timing-function);
+    fill: var(--primary-text-color);
+  }
+
+  &__link_grey-bg {
+    transition: var(--duration-effect) var(--timing-function);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &__icon_white {
+    fill: var(--white-text-color);
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --background-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-hero-background-color: #2f303a;
+
+  --card-set-gap: 30px;
+  --duration-effect: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
