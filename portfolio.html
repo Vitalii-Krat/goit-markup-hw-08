@@ -24,13 +24,20 @@
             <nav class="navigation">
                 <a href="./index.html" class="logo header__logo"><span class="logo__web">Web</span>Studio</a>
 
-                <ul class="navigation list">
+                <ul class="navigation__list list">
                     <li class="navigation__item"><a class="navigation__link link" href="./index.html">Студия</a></li>
                     <li class="navigation__item portfolio-line"><a class="navigation__link link current"
                             href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation__item"><a class="navigation__link link" href="#">Контакты</a></li>
                 </ul>
             </nav>
+
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/sprite.svg#icon-menu_40px">
+                    </use>
+                </svg>
+            </button>
 
             <ul class="site-contacts list">
                 <li class="site-contacts__item">
@@ -49,6 +56,51 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
+<div class="mobile-menu" data-menu>
+    <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon">
+                <use href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+        <nav class="navigation-mobile">
+
+            <ul class="navigation-mobile__list list">
+                <li class="navigation-mobile__item  navigation-mobile__item_studio"><a
+                        class="navigation-mobile__link link" href="./index.html">Студия</a></li>
+                <li class="navigation-mobile__item"><a class="navigation-mobile__link link current""
+                        href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="navigation-mobile__item"><a class="navigation-mobile__link link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="site-contacts-mobile list">
+            <li class="site-contacts-mobile__item-tel">
+                <a class="site-contacts-mobile__link-tel link" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+
+
+            <li class="site-contacts-mobile__item-post">
+                <a class="site-contacts-mobile__link-post link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+
+
+        </ul>
+
+        <ul class="mobile-menu__list-social list">
+            <li class="mobile-menu__item-social"><a href="#" class="mobile-menu__link-social link">Instagram</a></li>
+            <li class="mobile-menu__item-social"><a href="#" class="mobile-menu__link-social link">Twitter</a></li>
+            <li class="mobile-menu__item-social"><a href="#" class="mobile-menu__link-social link">Facebook</a></li>
+            <li class="mobile-menu__item-social"><a href="#" class="mobile-menu__link-social link">Linkedln</a></li>
+        </ul>
+
+
+    </div>
+</div>
+
         </div>
 
     </header>
@@ -57,7 +109,7 @@
 
     <main>
 
-        <section class="section">
+        <section>
 
 
             <!--FILTER-->
@@ -84,7 +136,27 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/texnokrak_one.jpg" alt="Сайт Технокряк" width="370">
+
+                                <picture>
+                                
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/pd1x/1pd1xw.webp 1x, ./images/pd2x/1pd2xw.webp 2x" type="image/webp">
+                                    <source media="(min-width: 1200px)" srcset="./images/pd1x/1pd1x.jpg 1x, ./images/pd2x/1pd2x.jpg">
+                                
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/pt1x/1pt1xw.webp 1x, ./images/pt2x/1pt2xw.webp 2x" type="image/webp">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/pt1x/1pt1x.jpg 1x, ./images/pt2x/1pt2x.jpg 2x">
+                                
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/pm1x/1pm1xw.webp, ./images/pm2x/1pm2xw.webp 2x" type="image/webp">
+                                    <source media="(min-width: 280px)"
+                                        srcset="./images/pm1x/1pm1x.jpg 1x, ./images/pm2x/1pm2x.jpg 2x">
+
+                                    <img class="card__img" src="#" alt="Сайт Технокряк">
+
+                                </picture>
+
                                 <p class="wrapper-overlay__text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
@@ -101,7 +173,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/poster_two.jpg" alt="Игра двух людей в баскетбол" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/2pd1xw.webp 1x, ./images/pd2x/2pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/2pd1x.jpg 1x, ./images/pd2x/2pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/2pt1xw.webp 1x, ./images/pt2x/2pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/2pt1x.jpg 1x, ./images/pt2x/2pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/2pm1xw.webp, ./images/pm2x/2pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/2pm1x.jpg 1x, ./images/pm2x/2pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Игра двух людей в баскетбол">
+
+                            </picture>
+
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit. Eius et excepturi esse quasi libero quos.</p>
                             </div>
@@ -116,7 +206,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/seafood_three.jpg" alt="Ресторан Seafood" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/3pd1xw.webp 1x, ./images/pd2x/3pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/3pd1x.jpg 1x, ./images/pd2x/3pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/3pt1xw.webp 1x, ./images/pt2x/3pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/3pt1x.jpg 1x, ./images/pt2x/3pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/3pm1xw.webp, ./images/pm2x/3pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/3pm1x.jpg 1x, ./images/pm2x/3pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Ресторан Seafood">
+
+                            </picture>
+
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor, sit amet consectetur adipisicing
                                     elit. Deleniti, quis.</p>
                             </div>
@@ -131,7 +239,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="">
                             <div class="wrapper-overlay">
-                                <img src="./images/headphones_four.jpg" alt="Наушники" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/4pd1xw.webp 1x, ./images/pd2x/4pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/4pd1x.jpg 1x, ./images/pd2x/4pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/4pt1xw.webp 1x, ./images/pt2x/4pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/4pt1x.jpg 1x, ./images/pt2x/4pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/4pm1xw.webp, ./images/pm2x/4pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/4pm1x.jpg 1x, ./images/pm2x/4pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Наушники">
+
+                            </picture>
+
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing
                                     elit. Eum illo a numquam ea similique voluptatum? Provident ex ipsam esse quos, aut
                                     dolorum architecto facilis sint, nemo maxime modi. Sunt, ratione!</p>
@@ -147,7 +273,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/boxes_five.jpg" alt="Коробки" width="370">
+                            
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/5pd1xw.webp 1x, ./images/pd2x/5pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/5pd1x.jpg 1x, ./images/pd2x/5pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/5pt1xw.webp 1x, ./images/pt2x/5pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/5pt1x.jpg 1x, ./images/pt2x/5pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/5pm1xw.webp, ./images/pm2x/5pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/5pm1x.jpg 1x, ./images/pm2x/5pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Коробки">
+
+                            </picture>
+
                                 <p class="wrapper-overlay__text">ТLorem ipsum dolor, sit amet consectetur adipisicing
                                     elit. At quo distinctio temporibus quaerat inventore eos culpa provident
                                     perspiciatis necessitatibus unde!</p>
@@ -162,7 +306,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/screen_six.jpg" alt="Монитор" width="370">
+
+                            <picture>
+
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/6pd1xw.webp 1x, ./images/pd2x/6pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/6pd1x.jpg 1x, ./images/pd2x/6pd2x.jpg">
+
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/6pt1xw.webp 1x, ./images/pt2x/6pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/6pt1x.jpg 1x, ./images/pt2x/6pt2x.jpg 2x">
+
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/6pm1xw.webp, ./images/pm2x/6pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/6pm1x.jpg 1x, ./images/pm2x/6pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Монитор">
+
+                            </picture>
+
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit amet.</p>
                             </div>
 
@@ -176,7 +338,25 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/book_seven.jpg" alt="Книга" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/7pd1xw.webp 1x, ./images/pd2x/7pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/7pd1x.jpg 1x, ./images/pd2x/7pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/7pt1xw.webp 1x, ./images/pt2x/7pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/7pt1x.jpg 1x, ./images/pt2x/7pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/7pm1xw.webp, ./images/pm2x/7pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/7pm1x.jpg 1x, ./images/pm2x/7pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Книга">
+                            
+                            </picture>
+
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing
                                     elit. Nemo eos animi dolore minus reiciendis nisi natus id adipisci quos qui modi
                                     doloremque consequatur atque blanditiis expedita assumenda!</p>
@@ -191,7 +371,24 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/label_eight.jpg" alt="Этикетка" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/8pd1xw.webp 1x, ./images/pd2x/8pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/8pd1x.jpg 1x, ./images/pd2x/8pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/8pt1xw.webp 1x, ./images/pt2x/8pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/8pt1x.jpg 1x, ./images/pt2x/8pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/8pm1xw.webp, ./images/pm2x/8pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/8pm1x.jpg 1x, ./images/pm2x/8pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Этикетка">
+
+                            </picture>
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing
                                     elit. Ex, odio.</p>
                             </div>
@@ -205,7 +402,24 @@
                     <li class="card__item">
                         <a class="link card__link" href="#">
                             <div class="wrapper-overlay">
-                                <img src="./images/desctop_nine.jpg" alt="Работа с ноутбуком" width="370">
+
+                            <picture>
+                            
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/9pd1xw.webp 1x, ./images/pd2x/9pd2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 1200px)" srcset="./images/pd1x/9pd1x.jpg 1x, ./images/pd2x/9pd2x.jpg">
+                            
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/9pt1xw.webp 1x, ./images/pt2x/9pt2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 768px)" srcset="./images/pt1x/9pt1x.jpg 1x, ./images/pt2x/9pt2x.jpg 2x">
+                            
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/9pm1xw.webp, ./images/pm2x/9pm2xw.webp 2x"
+                                    type="image/webp">
+                                <source media="(min-width: 280px)" srcset="./images/pm1x/9pm1x.jpg 1x, ./images/pm2x/9pm2x.jpg 2x">
+
+                                <img class="card__img" src="#" alt="Работа с ноутбуком">
+
+                            </picture>
                                 <p class="wrapper-overlay__text">Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Obcaecati, est soluta ratione voluptate placeat veritatis?</p>
                             </div>
@@ -298,6 +512,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

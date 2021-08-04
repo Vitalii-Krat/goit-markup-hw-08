@@ -1,3 +1,20 @@
+
+@media screen and (max-width: 1199px){
+.specialization {
+  &__list {
+  
+    display: none;
+  }
+
+  &__title {
+    display: none;
+
+}}}
+
+
+
+
+@media screen and (min-width: 1200px){
 .specialization {
   &__list {
     display: flex;
@@ -20,8 +37,7 @@
 
   &__text {
     position: absolute;
-    width: 370px;
-    height: 70px;
+    width: 100%;
     @include font($fw: 700, $lh: 1.14);
     text-align: center;
     text-transform: uppercase;
@@ -32,4 +48,6 @@
   &__sub {
     padding-top: 27px;
   }
+}
+
 }

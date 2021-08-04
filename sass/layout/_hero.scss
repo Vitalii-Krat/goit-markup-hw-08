@@ -1,24 +1,17 @@
 .hero {
   background-color: var(--primary-text-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+    url('../images/hero/heromob@1x.jpg');
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  height: 600px;
-  outline: 1px solid #000000;
+
   margin-left: auto;
   margin-right: auto;
 
-  &__alight {
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-    text-align: center;
-  }
 
   &__title {
     margin-bottom: 30px;
@@ -27,10 +20,55 @@
     text-align: center;
 
     color: var(--white-text-color);
-    @include font($fs: 44px, $fw: 900, $lh: 1.36);
+    @include font($fs: 26px, $fw: 900, $lh: 1.62);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
+  &__alight {
+    margin-left: auto;
+    margin-right: auto;
+    // width: 696px;
+    text-align: center;
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 280px),
+    (min-resolution: 192dpi) and (min-width: 280px),
+    (min-resolution: 2dppx) and (min-width: 280px) {
+    & {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/heromob@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: url('../images/hero/herotab@1x.jpg');
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    & {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/herotab@2x.jpg');
+    }
+
+    @media screen and (min-width: 1200px) {
+      & {
+        background-image: url('../images/hero/herodesc@1x.jpg');
+      }
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      (min-resolution: 192dpi) and (min-width: 1200px),
+      (min-resolution: 2dppx) and (min-width: 1200px) {
+      & {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url('../images/hero/herodesc@2x.jpg');
+      }
+    }
+  }
 }
