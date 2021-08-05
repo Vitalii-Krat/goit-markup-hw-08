@@ -44,7 +44,7 @@
 
   @media screen and (min-width: 768px) {
     & {
-      background-image: url('../images/hero/herotab@1x.jpg');
+      background-image: url('../images/hero/herotab1x.jpg');
     }
   }
 
@@ -53,12 +53,12 @@
     (min-resolution: 2dppx) and (min-width: 768px) {
     & {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/hero/herotab@2x.jpg');
+        url('../images/hero/herotab2x.jpg');
     }
 
     @media screen and (min-width: 1200px) {
       & {
-        background-image: url('../images/hero/herodesc@1x.jpg');
+        background-image: url('../images/hero/herodes1x.jpg');
       }
     }
 
@@ -67,7 +67,7 @@
       (min-resolution: 2dppx) and (min-width: 1200px) {
       & {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../images/hero/herodesc@2x.jpg');
+          url('../images/hero/herodes2x.jpg');
       }
     }
   }

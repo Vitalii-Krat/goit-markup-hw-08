@@ -100,6 +100,11 @@
 }
 
 @media screen and (min-width: 768px){
+
+.filter__list{
+  justify-content: center;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
