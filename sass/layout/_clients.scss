@@ -4,17 +4,15 @@
 }
 
 .clients {
+
   &__list {
-    width: 100%;
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: calc(-1 * var(--card-set-gap));
     margin-left: calc(-1 * var(--card-set-gap));
   }
-  // &__list > &__company {
-  //   margin-right: 30px;
-  // }
 
   &__company {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
@@ -26,17 +24,12 @@
     margin-bottom: 30px;
   }
 
-  // &__list > &__company:last-child {
-  //   margin-right: 0px;
-  // }
-
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
 
-    width: 190px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -51,60 +44,35 @@
   &__icon {
     transition: fill var(--duration-effect) var(--timing-function);
   }
+
+  
+@media screen and (min-width: 1199px){
+
+  &__list > &__company{  
+    flex-basis: calc(100% / 6 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);}
+  
+  }
+
+  @media screen and (min-width: 1200px){
+
+    &__list {
+      display: flex;
+    }
+    
+    &__title {
+      margin-bottom: 50px;
+    }
+    
+    &__list > &__company:last-child {
+      margin-right: 0px;
+    }
+    
+    }
+  
 }
 
 
-@media screen and (min-width: 768px){
 
-.clients__list > .clients__company{  
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);}
 
-}
-
-@media screen and (min-width: 1200px){
-
-.clients{
-
-}
-
-.clients__list {
-  display: flex;
-    flex-wrap: unset;
-    margin-left: 30px;
-}
-.clients__list > .clients__company {
-  flex-basis: unset;
-  margin-right: 30px;
-}
-
-.clients__title {
-  margin-bottom: 50px;
-}
-
-.clients__list > .clients__company:last-child {
-  margin-right: 0px;
-}
-
-.client__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: background-color var(--duration-effect) var(--timing-function);
-}
-.client__link:hover,
-.client__link:focus {
-  fill: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
-}
-
-.client__icon {
-  transition: fill var(--duration-effect) var(--timing-function);
-}}
