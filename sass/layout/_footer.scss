@@ -21,12 +21,12 @@
 .adress-block{
   display: inline-flex;
   flex-direction: column;
-
+  margin-bottom: 60px;
 }
 
 .adress {
   font-style: inherit;
-  margin-bottom: 60px;
+  
 
 
   &__item {
@@ -76,7 +76,7 @@
 }
 
 .footer-form {
-  width: 100%;
+  // width: 100%;
   margin-left: auto;
 
   &__title {
@@ -96,7 +96,7 @@
 
   &__input {
     margin-bottom: 20px;
-    width: 100%;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -134,6 +134,7 @@
   .site-footer__container{
   display: flex;
   flex-wrap: wrap;
+  align-items:baseline;
   justify-content: space-around;}
 
   .footer-form{
@@ -155,13 +156,14 @@
 
 .site-footer__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
 }
 
 
 .adress-block{
 margin-right: 70px;
+margin-bottom: 0;
 }
 
 .site-footer .logo {
@@ -239,5 +241,9 @@ margin-right: 70px;
   height: 50px;
   padding: 15px 16px;
 }
+
+.footer-form{
+  margin-left: auto;
+} 
 
 }

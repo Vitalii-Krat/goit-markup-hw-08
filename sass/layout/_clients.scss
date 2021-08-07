@@ -45,6 +45,12 @@
     transition: fill var(--duration-effect) var(--timing-function);
   }
 
+
+  @media screen and (min-width: 768px){
+    &__company{  flex-basis: calc(100% / 3 - var(--card-set-gap));}
+  }
+
+
   
 @media screen and (min-width: 1199px){
 
